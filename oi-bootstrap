@@ -166,7 +166,7 @@ eval set -- "$TMP"
 
 debian_mirror=http://ftp.de.debian.org/debian/
 openinkpot_mirror=http://openinkpot.org/pub/SLIND/
-openinkpot_suite=clydesdale
+openinkpot_suite=asimov
 root_cmd=sudo
 chroot_env=
 target_archs=armel
