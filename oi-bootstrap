@@ -241,6 +241,11 @@ case "$1" in
     *)  work_dir=$(pwd)/$1;;
 esac
 
+if [ -e $work_dir ]; then
+    echo "It's not possible to bootstrap to existing directory. Delete $work_dir and restart the script."
+    exit 1
+fi
+
 root_sh="$root_cmd sh -c"
 
 case "$(hostarch)" in
